@@ -5,7 +5,7 @@
 class Airtone < Formula
   desc "Stream your Mac's system audio to your phone in sync — gapless, no app required."
   homepage "https://github.com/sait-turanalp/airtone"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   depends_on "ffmpeg"
@@ -15,16 +15,16 @@ class Airtone < Formula
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/sait-turanalp/airtone/releases/download/v0.3.2/airtone_0.3.2_darwin_amd64.tar.gz"
-    sha256 "edf0b0f9ca10d7c4d83904cd0945c98a7827a4daec456ce01734327c805b3b31"
+    url "https://github.com/sait-turanalp/airtone/releases/download/v0.3.3/airtone_0.3.3_darwin_amd64.tar.gz"
+    sha256 "dec9c249575cd8d95c1c4ebfe0540dd410a7be40ce108cd208a8adca9e987c58"
 
     define_method(:install) do
       bin.install "airtone"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/sait-turanalp/airtone/releases/download/v0.3.2/airtone_0.3.2_darwin_arm64.tar.gz"
-    sha256 "c0f52e4a185049e54d0f7c7d4f9644be20e9d925cba737014f9e880600d6cbea"
+    url "https://github.com/sait-turanalp/airtone/releases/download/v0.3.3/airtone_0.3.3_darwin_arm64.tar.gz"
+    sha256 "035fc663d67aabad998d69c982f0d98f5a95801f868969c911d2fdd8d1f4c1fb"
 
     define_method(:install) do
       bin.install "airtone"
